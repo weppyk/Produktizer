@@ -1,0 +1,18 @@
+AppBundle\Entity\Stocks:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\Entity\StocksRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        code:
+            type: string
+            length: '10'
+        inStock:
+            type: string
+            length: '10'
+    lifecycleCallbacks: {  }
